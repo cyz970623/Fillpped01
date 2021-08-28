@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WV-CJ-EAl">
+                                <rect key="frame" x="168.5" y="438" width="77" height="30"/>
+                                <state key="normal" title="Hello world"/>
+                                <connections>
+                                    <action selector="helloworldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjE-Cq-nRk"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-MZ-KSQ">
                                 <rect key="frame" x="140" y="44" width="134" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -26,14 +33,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3WV-CJ-EAl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="23e-1r-22B"/>
+                            <constraint firstItem="3WV-CJ-EAl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gj4-0B-Xs0"/>
                             <constraint firstItem="MLe-MZ-KSQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iy1-qG-FAL"/>
                             <constraint firstItem="MLe-MZ-KSQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ncf-6h-7JA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="topCenterLable" destination="MLe-MZ-KSQ" id="apT-wx-rE4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="80"/>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
     </scenes>
     <resources>

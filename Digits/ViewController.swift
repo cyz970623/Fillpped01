@@ -15,5 +15,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var topCenterLable: UILabel!
+    @IBAction func helloworldTapped(_ sender: Any) {
+        self.topCenterLable.text = "Hello MSL World!"
+    }
 }
 
