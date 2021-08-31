@@ -16,26 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WV-CJ-EAl">
-                                <rect key="frame" x="168.5" y="438" width="77" height="30"/>
-                                <state key="normal" title="Hello world"/>
-                                <connections>
-                                    <action selector="helloworldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjE-Cq-nRk"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-MZ-KSQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Guess a number!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-MZ-KSQ">
                                 <rect key="frame" x="140" y="44" width="134" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Screen Shot 2021-08-28 at 2.19.09 PM" translatesAutoresizingMaskIntoConstraints="NO" id="97z-l4-0dT">
+                                <rect key="frame" x="20" y="81" width="374" height="357"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WV-CJ-EAl">
+                                <rect key="frame" x="169" y="433" width="77" height="30"/>
+                                <state key="normal" title="Hello world"/>
+                                <connections>
+                                    <action selector="helloworldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjE-Cq-nRk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3WV-CJ-EAl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="23e-1r-22B"/>
+                            <constraint firstItem="97z-l4-0dT" firstAttribute="top" secondItem="MLe-MZ-KSQ" secondAttribute="bottom" constant="8" symbolic="YES" id="70p-Gz-4N3"/>
+                            <constraint firstItem="3WV-CJ-EAl" firstAttribute="top" secondItem="97z-l4-0dT" secondAttribute="bottom" constant="8" symbolic="YES" id="9I5-aE-Hal"/>
                             <constraint firstItem="3WV-CJ-EAl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gj4-0B-Xs0"/>
                             <constraint firstItem="MLe-MZ-KSQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iy1-qG-FAL"/>
+                            <constraint firstItem="97z-l4-0dT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TV6-iJ-ill"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="97z-l4-0dT" secondAttribute="trailing" constant="20" id="kOF-Dr-Llc"/>
                             <constraint firstItem="MLe-MZ-KSQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ncf-6h-7JA"/>
                         </constraints>
                     </view>
@@ -49,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2021-08-28 at 2.19.09 PM" width="672" height="436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
